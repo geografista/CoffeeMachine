@@ -1,0 +1,24 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+    </head>
+    <body>
+    <h1>Automat do kawy</h1>
+
+    <?php
+        require 'CoffeeMachine.php';
+
+        $automat = new CoffeeMachine();
+		
+		
+		$automat->displayInfo();
+		$automat->przyjmijDyspozycje(1); 
+		
+		
+		$automat->przyjmijPieniadze(7);
+		
+		
+		
+	?>
+    </body>
+</html>
